@@ -25,6 +25,7 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
+// https://choosealicense.com/licenses/
 function renderLicenseLink(license) {
   if (license === 'MIT') {
     return '[MIT](https://opensource.org/licenses/MIT)';
@@ -52,8 +53,6 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== 'None') {
     return `
-## License
-${renderLicenseBadge(license)}
 This project is licensed under the ${renderLicenseLink(license)} license.
 `;
   }
@@ -75,7 +74,7 @@ function generateMarkdown(data) {
   const content = `
 # ${data.title}
 
-${renderLicenseBadge(license)}
+${renderLicenseBadge(data.license)}
 
 ## Description
 ${data.description}
