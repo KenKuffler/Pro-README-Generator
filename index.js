@@ -126,11 +126,11 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, content) {
+function writeToFile(fileName, content, license) {
 
 
     // TODO: Write the content to the README file
-    fs.writeFile(fileName, content, err => {
+    fs.writeFile(fileName, content, license, err => {
         if (err) {
             console.error(err);
         } else {
@@ -143,10 +143,10 @@ function writeToFile(fileName, content) {
 function init() {
     inquirer.prompt(questions)
         .then(answers => {
-            let readMeText = generateMarkdown(answers);
+            let readMeText = generateMarkdown(answers, answers.license);
             return readMeText
-        }).then(readmeTeaxt => {
-            writeToFile("OUTPUTREADME.md", readmeTeaxt);
+        }).then(readMeText => {
+            writeToFile("OUTPUTREADME.md", readMeText);
         })
 }
 
