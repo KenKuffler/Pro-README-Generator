@@ -14,10 +14,14 @@ This application will help a user generate a README without having to worry abou
 - [Questions](#questions)
 
 ## Installation
-To install the application clone the github      repository into a directory on your local machine using your terminal. Open the file in VS Code or whatever editory you work with. Open the terminal in your editor(ex: VS Code) and make sure you're in the root       directory you cloned from the GitHub repository. You're now ready to run the app!
+To install the application clone the github repository into a directory on your local machine using your terminal. Open the file in VS Code or whatever editory you work with. Open the terminal in your editor(ex: VS Code) and make sure you're in the root directory you cloned from the GitHub repository. Then in your terminal input the command 'npm install inquirer'. You're now ready to run the app!
 
 ## Usage
-Once installation is complete, run the code: 'node         index.js' in the terminal. As you answer the prompts you should see a console log showing those answers, and  once all prompts have been completed, a message that says, 'README file created successfully!' You should also see your newly created file with the name 'OUTPUTREADME.md'. Its generated in mark down syntax so you can    copy and paste that code into the README.md file for your own project!
+Once installation is complete, run the code: 'node index.js' in the terminal. As you answer the prompts you should see a console log showing those answers, and  once all prompts have been completed, a message that says, 'README file created successfully!' You should also see your newly created file with the name 'OUTPUTREADME.md'. Its generated in mark down syntax so you can copy and paste that code into the README.md file for your own project!
+
+[![Demo](./utils/demo-image.png)](./utils/Pro-README-Generator-Demo.webm)
+
+An explanation of how to embed images and videos to README files can be found at the following website: https://www.geeksforgeeks.org/how-to-embed-a-video-into-github-readme-md/
 
 ## Contribution
 I will not be accepting contributions from third parties at this time.
