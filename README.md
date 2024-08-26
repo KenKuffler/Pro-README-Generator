@@ -21,6 +21,8 @@ Once installation is complete, run the code: 'node index.js' in the terminal. As
 
 [![Demo](./utils/demo-image.png)](./utils/Pro-README-Generator-Demo.webm)
 
+An explanation of how to embed images and videos to README files can be found at the following website: https://www.geeksforgeeks.org/how-to-embed-a-video-into-github-readme-md/
+
 ## Contribution
 I will not be accepting contributions from third parties at this time.
 
